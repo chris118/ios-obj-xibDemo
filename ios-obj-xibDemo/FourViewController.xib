@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUm-Rb-BPO">
+                    <rect key="frame" x="258" y="273" width="71" height="41"/>
+                    <state key="normal" title="Next page">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextClicked:" destination="-1" eventType="touchUpInside" id="uIN-H1-Yey"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Y-sc-3mc">
+                    <rect key="frame" x="186" y="0.0" width="229" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y2Y-sc-3mc" secondAttribute="bottom" constant="545" id="HWc-xM-L6Q"/>
+                <constraint firstItem="Y2Y-sc-3mc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ovt-A3-oVL"/>
+                <constraint firstAttribute="centerX" secondItem="UUm-Rb-BPO" secondAttribute="centerX" constant="7" id="PNh-CP-xAv"/>
+                <constraint firstItem="Y2Y-sc-3mc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YqK-o6-V2c"/>
+                <constraint firstItem="Y2Y-sc-3mc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="186" id="Ytu-qe-bo5"/>
+                <constraint firstItem="UUm-Rb-BPO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="273" id="qBQ-8H-6bq"/>
+                <constraint firstAttribute="centerY" secondItem="UUm-Rb-BPO" secondAttribute="centerY" constant="6.5" id="z3H-iS-Hiy"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
